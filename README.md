@@ -7,8 +7,8 @@ any/every citizen to bring any form of corruption to the notice of appropriate a
 general public. Users can also report on things that needs government intervention.
 
 ## Link to PivotalTracker Board
-[Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2231633 "IReporter PivotalTracker board")
+[Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2232126 "IReporter PivotalTracker board")
 
 ## Link to GitHub Pages
-[Github Pages](https://llwasampijja.github.io/googe-start-page/ "IReporter GitHub pages link")
+[Github Pages](https://llwasampijja.github.io/ireporter-challenge-one/UI/ "IReporter GitHub pages link")
 
