@@ -65,6 +65,15 @@ header nav ul li a:link{
   color: #FFFFFF;
 }
 
+.mobile-menu-btn {
+  margin: 10px;
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
 /* login window */
 .sign-form-container{
   width: 100%;
@@ -174,4 +183,40 @@ input.sign-form-input {
 .sign-form-input-btn:hover {
   background: yellow;
   color: black;
+}
+
+
+/* Responsive design with media queries */
+@media only screen and (max-width: 700px) {
+  header .bigscreen-menu-btn {
+    display: none;
+  }
+
+  header nav {
+    margin: 4px 8px;
+  }
+  
+  header nav ul li {
+    display: block;
+  }
+  
+  header nav ul li a {
+    padding: 4px 0px 4px 8px;
+  }
+
+  header nav ul li a:link {
+    color: green;
+  }
+
+ .mobile-menu-btn {
+    display: inline-block;
+  }
+
+  .sign-form-image {
+    display: none;
+  }
+
+  .sign-form{
+    width: 100%;
+  }
 }
