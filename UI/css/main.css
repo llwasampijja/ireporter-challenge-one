@@ -88,12 +88,12 @@ header nav ul li a:link{
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f0ec08;
+  background: #FFFFFF;
 }
 
 .sign-form-image-wrapper{
   width: 718px;
-  background: #FFFFFF;
+  background: #f0ec08;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -138,14 +138,15 @@ header nav ul li a:link{
 .sign-form-element {
   width: 100%;
   position: relative;
-  color: #f0ec08;
+  color: blue;
   margin: 20px 0px;
+  font-style: italic
 }
 
 .sign-form-input {
   display: block;
   width: 100%;
-  background: transparent;
+  background: #FFFFFF;
   font-size: 18px;
   color: #666666;
   line-height: 1.2;
@@ -181,7 +182,7 @@ input.sign-form-input {
 }
 
 .sign-form-input-btn:hover {
-  background: yellow;
+  background: #FFFFFF;
   color: black;
 }
 

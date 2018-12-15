@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Sign in</title>
+	<title>Sign up</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="javascript/app.js"></script>
 </head>
@@ -34,7 +34,13 @@
 			<div class="sign-form-image-wrapper">
 				<div class="sign-form-image" style="background-image: url('images/arrested.jpg');"></div>
 				<form class="sign-form">
-					<span class="sign-form-title">User Login</span>
+					<span class="sign-form-title">User Signup</span>
+					<div class="sign-form-element sign-form-input-wrapper">
+						<input class="sign-form-input" type="text" name="user-name" placeholder="Full Name" required>
+					</div>
+					<div class="sign-form-element sign-form-input-wrapper">
+						<input class="sign-form-input" type="text" name="username" placeholder="username" required>
+					</div>
 					<div class="sign-form-element sign-form-input-wrapper">
 						<input class="sign-form-input" type="email" name="email" placeholder="Email" required>
 					</div>
@@ -44,22 +50,16 @@
 
 					<div class="sign-form-element sign-form-input-btn-wrapper">
 						<button class="sign-form-input-btn">
-							Sign in
+							Sign up
 						</button>
-					</div>
-
-					<div class="sign-form-element">
-						<span>Forgot your </span>
-						<a href="#">password?</a>
 					</div>
 
 					<div class="sign-form-element ">
-						<span>Not a member yet, click button below to signup</span>
+						<span>Already a member? click button below to sign-in</span>
 						<button class="sign-form-input-btn">
-							Signup
+							Sign-in
 						</button>
 					</div>
-				</form>
 			</div>
 		</div>
 	</section>
