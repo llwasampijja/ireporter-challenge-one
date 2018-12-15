@@ -6,3 +6,15 @@ function toggleMobileMenuVisibility() {
         x.style.display = "none";
     }
 }
+
+function openSignupPage() {
+    location.href = 'signup.html'
+}
+
+function openSigninPage() {
+    location.href = 'login.html'
+}
+
+function openHomePage() {
+    location.href = 'index.html'
+}
