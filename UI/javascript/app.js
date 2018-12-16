@@ -7,6 +7,15 @@ function toggleMobileMenuVisibility() {
     }
 }
 
+function toggleAccountMenuVisibility() {
+    var x = document.getElementById("account-menu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 function openSignupPage() {
     location.href = 'signup.html'
 }
@@ -16,5 +25,5 @@ function openSigninPage() {
 }
 
 function openHomePage() {
-    location.href = 'index.html'
+    location.href = 'my_reports.html'
 }

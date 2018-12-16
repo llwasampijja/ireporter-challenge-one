@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | IReporter</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="javascript/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>IReporter</h1>
+        <nav class="bigscreen-menu-nav">
+            <ul>
+                <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
+                <li class="header-nav-item"><a href="index.html">Home</a></li>
+                <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
+                <li class="header-nav-item"><a href="#">About Us</a></li>
+                <li class="header-nav-item"><a href="#">Contact Us</a></li>
+                <!-- <li class="header-nav-item"><div class="profile-pic-wrapper"><img class="profile-pic-" src="images/intervention.png" /></div></li> -->
+                <li class="header-nav-item">
+                    <div class="down-arrow-wrapper" onclick="toggleAccountMenuVisibility()"><i class="down-arrow"></i></div>
+                </li>
+
+            </ul>
+        </nav>
+
+        <nav class="mobile-menu-btn">
+            <button onclick="toggleMobileMenuVisibility()" class="dropdownbtn">&#9776;</button>
+            <div id="mobile-menu">
+                <ul>
+                    <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
+                    <li class="header-nav-item"><a href="index.html">Home</a></li>
+                    <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
+                    <li class="header-nav-item"><a href="#">About Us</a></li>
+                    <li class="header-nav-item"><a href="#">Contact Us</a></li>
+                    <!-- <li class="header-nav-item"><div class="profile-pic-wrapper"><img class="profile-pic-" src="images/intervention.png" /></div></li> -->
+                    <li class="header-nav-item"><a href="account.html">My Account</a></li>
+                    <li class="header-nav-item"><a href="index.html">Logout</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="account-menu" class="account-menu-nav">
+        <!-- <button onclick="toggleMobileMenuVisibility()" class="dropdownbtn">&#9776;</button> -->
+        <div id="account-menu">
+            <ul>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div>
+            <header class="inside-headers">
+                <h2 class="dashboard-header-element">My Redflags/Interventions</h2>
+                <div class="filter-reports reports-type dashboard-header-element">
+                    <span class="dashboard-filter-item">Report type</span>
+                    <select class="dashboard-filter-item">
+                        <option value="all">All</option>
+                        <option value="redflag">Red-flag</option>
+                        <option value="intervention">Intervention</option>
+                    </select>
+                    <span class="dashboard-filter-item">Report Status</span>
+                    <select class="dashboard-filter-item">
+                        <option value="all">All</option>
+                        <option value="under-investigation">Under Investigation</option>
+                        <option value="resolved">Resolved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                    <button class="button-Filter site-signup-btn site-btn dashboard-filter-item">Filter Reports</button>
+                </div>
+                <input class="reports-search-box dashboard-header-element" type="text" placeholder="Search Reports" id="search_reports" />
+                <button id="new-report-btn" class="site-signup-btn site-btn dashboard-header-element">Create New</button>
+            </header>
+            <div class="grid-container">
+                <div></div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Bad road</span></li>
+                        <li>Record Type: <span>Intervention</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Resolved</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Corrupt Cop</span></li>
+                        <li>Record Type: <span>Red-flag</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Under Investigation</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Corrupt Public Doctor</span></li>
+                        <li>Record Type: <span>Red-flag</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Rejected</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Bad road</span></li>
+                        <li>Record Type: <span>Intervention</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Resolved</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Bad road</span></li>
+                        <li>Record Type: <span>Intervention</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Resolved</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Bad road</span></li>
+                        <li>Record Type: <span>Intervention</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Resolved</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+                <div class="grid-box-container">
+                    <ul>
+                        <li>
+                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        </li>
+                        <li>Title: <span>Bad road</span></li>
+                        <li>Record Type: <span>Intervention</span></li>
+                        <li>Submission Date: <span>12/12/2018</span></li>
+                        <li>Status: <span>Resolved</span></li>
+                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-items-container">
+            <section class="relevant-sites-links-section">
+                <div class="relevant-sites-links-container">
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">I hate corruption</a></li>
+                            <li><a href="#">Uganda Police</a></li>
+                            <li><a href="#">UPDF Official Site</a></li>
+                            <li><a href="#">President's Office</a></li>
+                            <li><a href="#">Uganda red Cross</a></li>
+                            <li><a href="#">Chess Corruption</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">Kill Corruption</a></li>
+                            <li><a href="#">UNRA</a></li>
+                            <li><a href="#">UMEME</a></li>
+                            <li><a href="#">UEDCL</a></li>
+                            <li><a href="#">Am Pure</a></li>
+                            <li><a href="#">Hiphop is Alive</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">Christmas is Coming</a></li>
+                            <li><a href="#">Christmas is upon us</a></li>
+                            <li><a href="#">Christmas is here</a></li>
+                            <li><a href="#">Save a soul</a></li>
+                            <li><a href="#">Bolongatiya</a></li>
+                            <li><a href="#">Thu Emperor</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">7AF</a></li>
+                            <li><a href="#">Kasubi</a></li>
+                            <li><a href="#">Andela Uganda</a></li>
+                            <li><a href="#">Mbajja</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+            </section>
+            <div class="social-media-icons-wrapper">
+                <ul>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/facebook-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/twitter-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/googleplus-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/linkedin-icon.jpg" /></div>
+                        </a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
