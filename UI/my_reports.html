@@ -8,6 +8,9 @@
     <title>Dashboard | IReporter</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="javascript/app.js"></script>
+    <!-- <script type="text/javascript">
+        runAllJavaScript();
+    </script> -->
 </head>
 
 <body>
@@ -90,7 +93,12 @@
                         <li>Record Type: <span>Intervention</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Resolved</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -102,7 +110,12 @@
                         <li>Record Type: <span>Red-flag</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Under Investigation</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -114,7 +127,12 @@
                         <li>Record Type: <span>Red-flag</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Rejected</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -126,7 +144,12 @@
                         <li>Record Type: <span>Intervention</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Resolved</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -138,7 +161,12 @@
                         <li>Record Type: <span>Intervention</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Resolved</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -150,7 +178,12 @@
                         <li>Record Type: <span>Intervention</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Resolved</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-box-container">
@@ -162,7 +195,12 @@
                         <li>Record Type: <span>Intervention</span></li>
                         <li>Submission Date: <span>12/12/2018</span></li>
                         <li>Status: <span>Resolved</span></li>
-                        <li><button id="view-report-btn" class="view-report-btn">View</button></li>
+                        <li>
+                            <div class="buttons-sowa">
+                                <button id="edit-report-btn" class="edit-report-btn">Edit</button>
+                                <button id="view-report-btn" class="view-report-btn">View</button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -238,6 +276,59 @@
         </div>
     </footer>
 
+    <!-- The Modal -->
+    <div id="view-report-details-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section>
+                <div>
+                    <header class="inside-headers">
+                        <h2 class="dashboard-header-element">Bad road</h2>
+                        <ul>
+                            <li>Record Type: <span>Intervention</span></li>
+                            <li>Submission Date: <span>12/12/2018</span></li>
+                            <li>Status: <span>Resolved</span></li>
+                        </ul>
+                    </header>
+                    <div class="content-container">
+                        <h3 class="modal-contents-item">Details about the case</h3>
+                        <p class="modal-contents-item">On the 21st of january, Seargent Kamukukury was caught taking a
+                            bribe
+                            on the street. This dashboard is for the normal users who register on
+                            the system to report any cases of corruption (red-flags) or interventions.
+                            In addition to having the header and the footer, it should show lists of
+                            reports (red-flags and interventions) that have been submitted by the
+                            user. These reports should be displayed in a grid list, with each grid
+                            list item showing a picture (if any) that was added on the report,
+                            the report title, type of report (i.e., red-flag or intervention),
+                            submission date, the status of the report, as well as a button for
+                            launching the view window of that specific red-flag or intervention.
+                            In case there is no picture, there a default picture should be used.
+                        </p>
+                        <h3 class="modal-contents-item">Photograghoc Evidence</h3>
+                        <div class="modal-contents-item">
+                            <img src="images/bribe-story.jpg" />
+                        </div>
+                        <h3 class="modal-contents-item">Video Evidence</h3>
+                        <div class="modal-contents-item">
+                            <video controls>
+                                <source src="https://www.youtube.com/watch?v=ftkmRaRUK1I&t=22s" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+    <script>
+        openViewReportsModal()
+    </script>
 </body>
 
 </html>
