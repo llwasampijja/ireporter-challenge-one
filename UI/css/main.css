@@ -560,4 +560,9 @@ h2.dashboard-header-element {
     display: block;
     margin: 5px auto;
   }
+
+  .edit-form-btn {
+    display: block;
+    margin: 5px auto;
+  }
 }
