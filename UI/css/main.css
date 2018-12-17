@@ -446,18 +446,9 @@ h2.dashboard-header-element {
   margin: 10px 0px; 
 }
 
-
-
-
-/* #################################### */
-form, .subscribe:hover>div {
-	display: none;
+.modal-contents-item img, .modal-contents-item video{
+  width: 85%;
 }
-
-.subscribe:hover>form {
-	display: block;
-}
-/* #################################### */
 
 
 /* Responsive design with media queries */
