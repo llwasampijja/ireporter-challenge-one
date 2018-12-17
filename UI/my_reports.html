@@ -276,7 +276,7 @@
         </div>
     </footer>
 
-    <!-- The Modal -->
+    <!-- The View Red-flag Modal -->
     <div id="view-report-details-modal" class="modal">
 
         <!-- Modal content -->
@@ -326,8 +326,60 @@
 
     </div>
 
+    <!-- The Edit Red-flag Modal -->
+    <div id="edit-report-details-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section>
+                <div>
+                    <header class="inside-headers">
+                        <h2 class="dashboard-header-element">Edit Red-Flag/Intervention</h2>
+                    </header>
+                    <div class="content-container">
+                        <form>
+                            <input class="edit-report-input" type="text" name="report-title" placeholder="Title"
+                                required>
+
+                            <select class="edit-report-input">
+                                <option value="redflag">Red-Flag</option>
+                                <option value="intervention">Intervention</option>
+                            </select>
+                            <textarea class="edit-report-input" name="detailed-description" id="detailed-description"
+                                placeholder="Detailed Description" rows="7"></textarea>
+                            <div class="edit-report-input">
+                                <label class="edit-report-file">
+                                    Add Image
+                                </label>
+                                <input class="edit-report-file" type="file" name="picture" accept="image/*" />
+                            </div>
+                            <div class="edit-report-input">
+                                <label class="edit-report-file">
+                                    Add Video
+                                </label>
+                                <input class="edit-report-file" type="file" name="video" accept="video/*" />
+                            </div>
+                            <div class="edit-report-input">
+                                <button class="edit-form-btn" onclick="getLocation()">Get Coordinates</button>
+                                <textarea class="geocordinates-box" name="geocoordinates" id="geocoordinates-field"
+                                    placeholder="Geo-Coordinates" rows="1"></textarea>
+                            </div>
+                            <div class="edit-report-input">
+                                <button id="cancel-edit-report" class="edit-form-btn">Cancel</button>
+                                <button id="save-edit-report" class="edit-form-btn">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
     <script>
-        openViewReportsModal()
+        runAllJavaScript();
     </script>
 </body>
 
