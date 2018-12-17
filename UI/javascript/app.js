@@ -1,18 +1,18 @@
 function toggleMobileMenuVisibility() {
-    var x = document.getElementById("mobile-menu");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    var menu_ = document.getElementById("mobile-menu");
+    if (menu_.style.display === "none") {
+        menu_.style.display = "block";
     } else {
-        x.style.display = "none";
+        menu_.style.display = "none";
     }
 }
 
 function toggleAccountMenuVisibility() {
-    var x = document.getElementById("account-menu");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    var menu_ = document.getElementById("account-menu");
+    if (menu_.style.display === "none") {
+        menu_.style.display = "block";
     } else {
-        x.style.display = "none";
+        menu_.style.display = "none";
     }
 }
 
@@ -26,6 +26,14 @@ function openSigninPage() {
 
 function openHomePage() {
     location.href = 'my_reports.html'
+}
+
+function confirmDelete() {
+    var deleteMessage = confirm("Do you really want to delete this Item?");
+    if (deleteMessage == true) {
+        window.location.replace("my_reports.html");
+        return true;
+    }
 }
 
 
