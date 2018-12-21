@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-/* a:link{
-  color: red;
-} */
-
 a:visited{
   color: rgb(250, 246, 246);
 }
@@ -43,19 +39,13 @@ table {
   box-shadow: 0px 0px 5px 2px rgba(18,18,18,0.50);
 }
 
-/* <style>
-table { border-collapse: collapse; }
-tr:nth-child(3) { border: solid thin; }
-</style> */
-
 th {
   padding: 10px;
   background-color: #e8e9ef;
 }
 
 td {
-  padding: 10px;
-  
+  padding: 10px; 
 }
 
 tr {
@@ -77,12 +67,6 @@ header {
 header h1 {
   display: inline-block;
   margin: auto 0px;
-}
-
-header nav {
-  display: inline-block;
-  float: right;
-  margin: 10px 20px;
 }
 
 header nav ul li {
@@ -332,6 +316,12 @@ footer {
 }
 
 /* dashboard styles */
+.bigscreen-menu-nav {
+  display: inline-block;
+  float: right;
+  margin: 10px 20px;
+}
+
 .bigscreen-menu-nav ul {
   height: 50px;
 }
@@ -365,18 +355,6 @@ footer {
 .account-menu-nav ul li a:link, .account-menu-nav ul li a:visited{
   color: blue;
 }
-
-/* .profile-pic-wrapper {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.profile-pic {
-  height:100%;
-  width: auto;
-} */
 
 i {
   border: solid black;
@@ -567,7 +545,6 @@ h2.dashboard-header-element {
 
 #edit-profile-btn {
   letter-spacing: .1em;
-  /* background: rgb(65, 105, 225); */
   color: #ffffff;
   margin: 10px 10px 20px 10px;
   padding: 15px 20px;
@@ -582,7 +559,6 @@ h2.dashboard-header-element {
 
 .badge-status {
   background: #00c292;
-
   display: inline-block;
   padding: 15px 10px;
   font-size: 75%;
@@ -597,6 +573,38 @@ h2.dashboard-header-element {
 .profile-sections {
   text-align: center;
 }
+
+/* admin panel styles */
+.admin-control-panel-container {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin: auto;
+  width: fit-content;
+}
+
+.admin-control-panel-container button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.admin-control-panel-container button.active {
+  background-color: #ccc;
+}
+
+.section-manage-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 
 
 /* Responsive design with media queries */
@@ -688,9 +696,7 @@ h2.dashboard-header-element {
   }
 
 
-  /* ################################## */
 
-  /* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
   }
@@ -726,9 +732,7 @@ h2.dashboard-header-element {
 		white-space: nowrap;
 	}
 	
-	/*
-	Label the data
-	*/
+
 	.reports-table table tr td:nth-of-type(1):before { content: "Index"; }
 	.reports-table table tr td:nth-of-type(2):before { content: "Title"; }
 	.reports-table table tr td:nth-of-type(3):before { content: "Report Type"; }
