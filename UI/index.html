@@ -18,7 +18,7 @@
                 <li class="header-nav-item"><a href="admin_panel.html">Admin Panel</a></li>
                 <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
                 <li class="header-nav-item"><a href="index.html">Home</a></li>
-                <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
+                <li class="header-nav-item"><a href="login.html">Sign-out</a></li>
                 <li class="header-nav-item"><a href="#">About Us</a></li>
                 <li class="header-nav-item"><a href="#">Contact Us</a></li>
                 <li class="header-nav-item">
@@ -27,19 +27,10 @@
             </ul>
         </nav>
         <nav class="mobile-menu-btn">
-            <button onclick="toggleMobileMenuVisibility()" class="dropdownbtn">&#9776;</button>
-            <div id="mobile-menu">
-                <ul>
-                    <li class="header-nav-item"><a href="admin_panel.html">Admin Panel</a></li>
-                    <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
-                    <li class="header-nav-item"><a href="index.html">Home</a></li>
-                    <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
-                    <li class="header-nav-item"><a href="#">About Us</a></li>
-                    <li class="header-nav-item"><a href="#">Contact Us</a></li>
-                    <li class="header-nav-item">
-                        <div class="down-arrow-wrapper" onclick="toggleAccountMenuVisibility()"><i class="down-arrow"></i></div>
-                    </li>
-                </ul>
+            <div onclick="toggleMobileMenuVisibility()" class="dropdownbtn">
+                <div class="dropdownbtn-icon-bar"></div>
+                <div class="dropdownbtn-icon-bar"></div>
+                <div class="dropdownbtn-icon-bar"></div>
             </div>
         </nav>
     </header>
@@ -52,10 +43,26 @@
             </ul>
         </div>
     </nav>
+
+    <nav id="mobile-menu" class="account-menu-nav">
+        <ul>
+            <li class="header-nav-item"><a href="admin_panel.html">Admin Panel</a></li>
+            <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
+            <li class="header-nav-item"><a href="index.html">Home</a></li>
+            <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
+            <li class="header-nav-item"><a href="#">About Us</a></li>
+            <li class="header-nav-item"><a href="#">Contact Us</a></li>
+            <li><a href="user_profile.html">My Account</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
     <section class="website-banner">
-        <h2>Corruption Must Stop</h2>
-        <p>Get involved in the fight against corruption. Follow the link below to signup</p>
-        <span class="action-signup"><a href="#" class="site-signup-btn">Sign Up</a></span>
+        <div class="website-banner-foreground">
+            <h2>Corruption Must Stop</h2>
+            <p>Get involved in the fight against corruption. Follow the link below to signup</p>
+            <span class="action-signup"><a href="signup.html" class="site-signup-btn">Sign Up</a></span>
+        </div>
+
     </section>
 
     <section>
@@ -69,7 +76,7 @@
                 <div></div>
                 <div class="grid-box-container">
                     <section class="grid-box-content">
-                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
                         <h3>What Sevo says about corruption</h3>
                         <p>Sevo says blu blur and Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam
                             consectetur quibusdam
@@ -78,7 +85,8 @@
                 </div>
                 <div class="grid-box-container">
                     <section class="grid-box-content">
-                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>                        <h3>What Sevo says about corruption</h3>
+                        <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        <h3>What Sevo says about corruption</h3>
                         <p>Sevo says blu blur and Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam
                             consectetur quibusdam
                             magni minus aut modi aliquid</p>
@@ -86,7 +94,8 @@
                 </div>
                 <div class="grid-box-container">
                     <section class="grid-box-content">
-                            <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>                        <h3>What Sevo says about corruption</h3>
+                        <div class="grid-item-thumbnail-wrapper"><img class="grid-item-thumbnail" src="images/intervention.png" /></div>
+                        <h3>What Sevo says about corruption</h3>
                         <p>Sevo says blu blur and Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam
                             consectetur quibusdam
                             magni minus aut modi aliquid</p>
@@ -130,64 +139,72 @@
     </section>
 
     <footer>
-            <div class="footer-items-container">
-                <section class="relevant-sites-links-section">
-                    <div class="relevant-sites-links-container">
-                        <section class="relevant-sites-links-group">
-                            <ul>
-                                <li><a href="#">I hate corruption</a></li>
-                                <li><a href="#">Uganda Police</a></li>
-                                <li><a href="#">UPDF Official Site</a></li>
-                                <li><a href="#">President's Office</a></li>
-                                <li><a href="#">Uganda red Cross</a></li>
-                                <li><a href="#">Chess Corruption</a></li>
-                            </ul>
-                        </section>
-                        <section class="relevant-sites-links-group">
-                            <ul>
-                                <li><a href="#">Kill Corruption</a></li>
-                                <li><a href="#">UNRA</a></li>
-                                <li><a href="#">UMEME</a></li>
-                                <li><a href="#">UEDCL</a></li>
-                                <li><a href="#">Am Pure</a></li>
-                                <li><a href="#">Hiphop is Alive</a></li>
-                            </ul>
-                        </section>
-                        <section class="relevant-sites-links-group">
-                            <ul>
-                                <li><a href="#">Christmas is Coming</a></li>
-                                <li><a href="#">Christmas is upon us</a></li>
-                                <li><a href="#">Christmas is here</a></li>
-                                <li><a href="#">Save a soul</a></li>
-                                <li><a href="#">Bolongatiya</a></li>
-                                <li><a href="#">Thu Emperor</a></li>
-                            </ul>
-                        </section>
-                        <section class="relevant-sites-links-group">
-                            <ul>
-                                <li><a href="#">7AF</a></li>
-                                <li><a href="#">Kasubi</a></li>
-                                <li><a href="#">Andela Uganda</a></li>
-                                <li><a href="#">Mbajja</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
-                        </section>
-                    </div>
-    
-                </section>
-                <div class="social-media-icons-wrapper">
-                    <ul>
-                        <li><a href="#" class="social-media-icon"><div  class="social-media-icon-wrapper"><img src="images/facebook-icon.jpg" /></div></a></li>
-                        <li><a href="#" class="social-media-icon"><div  class="social-media-icon-wrapper"><img src="images/twitter-icon.jpg" /></div></a></li>
-                        <li><a href="#" class="social-media-icon"><div  class="social-media-icon-wrapper"><img src="images/googleplus-icon.jpg" /></div></a></li>
-                        <li><a href="#" class="social-media-icon"><div  class="social-media-icon-wrapper"><img src="images/linkedin-icon.jpg" /></div></a></li>
-    
-                    </ul>
+        <div class="footer-items-container">
+            <section class="relevant-sites-links-section">
+                <div class="relevant-sites-links-container">
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">I hate corruption</a></li>
+                            <li><a href="#">Uganda Police</a></li>
+                            <li><a href="#">UPDF Official Site</a></li>
+                            <li><a href="#">President's Office</a></li>
+                            <li><a href="#">Uganda red Cross</a></li>
+                            <li><a href="#">Chess Corruption</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">Kill Corruption</a></li>
+                            <li><a href="#">UNRA</a></li>
+                            <li><a href="#">UMEME</a></li>
+                            <li><a href="#">UEDCL</a></li>
+                            <li><a href="#">Am Pure</a></li>
+                            <li><a href="#">Hiphop is Alive</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">Christmas is Coming</a></li>
+                            <li><a href="#">Christmas is upon us</a></li>
+                            <li><a href="#">Christmas is here</a></li>
+                            <li><a href="#">Save a soul</a></li>
+                            <li><a href="#">Bolongatiya</a></li>
+                            <li><a href="#">Thu Emperor</a></li>
+                        </ul>
+                    </section>
+                    <section class="relevant-sites-links-group">
+                        <ul>
+                            <li><a href="#">7AF</a></li>
+                            <li><a href="#">Kasubi</a></li>
+                            <li><a href="#">Andela Uganda</a></li>
+                            <li><a href="#">Mbajja</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </section>
                 </div>
-    
+
+            </section>
+            <div class="social-media-icons-wrapper">
+                <ul>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/facebook-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/twitter-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/googleplus-icon.jpg" /></div>
+                        </a></li>
+                    <li><a href="#" class="social-media-icon">
+                            <div class="social-media-icon-wrapper"><img src="images/linkedin-icon.jpg" /></div>
+                        </a></li>
+
+                </ul>
             </div>
-        </footer>
+
+        </div>
+    </footer>
 
 </body>
 

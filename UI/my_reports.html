@@ -27,19 +27,10 @@
             </ul>
         </nav>
         <nav class="mobile-menu-btn">
-            <button onclick="toggleMobileMenuVisibility()" class="dropdownbtn">&#9776;</button>
-            <div id="mobile-menu">
-                <ul>
-                    <li class="header-nav-item"><a href="admin_panel.html">Admin Panel</a></li>
-                    <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
-                    <li class="header-nav-item"><a href="index.html">Home</a></li>
-                    <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
-                    <li class="header-nav-item"><a href="#">About Us</a></li>
-                    <li class="header-nav-item"><a href="#">Contact Us</a></li>
-                    <li class="header-nav-item">
-                        <div class="down-arrow-wrapper" onclick="toggleAccountMenuVisibility()"><i class="down-arrow"></i></div>
-                    </li>
-                </ul>
+            <div onclick="toggleMobileMenuVisibility()" class="dropdownbtn">
+                <div class="dropdownbtn-icon-bar"></div>
+                <div class="dropdownbtn-icon-bar"></div>
+                <div class="dropdownbtn-icon-bar"></div>
             </div>
         </nav>
     </header>
@@ -51,6 +42,19 @@
                 <li><a href="index.html">Logout</a></li>
             </ul>
         </div>
+    </nav>
+
+    <nav id="mobile-menu" class="account-menu-nav">
+        <ul>
+            <li class="header-nav-item"><a href="admin_panel.html">Admin Panel</a></li>
+            <li class="header-nav-item"><a href="my_reports.html">Dashboard</a></li>
+            <li class="header-nav-item"><a href="index.html">Home</a></li>
+            <li class="header-nav-item"><a href="index.html">Sign-out</a></li>
+            <li class="header-nav-item"><a href="#">About Us</a></li>
+            <li class="header-nav-item"><a href="#">Contact Us</a></li>
+            <li><a href="user_profile.html">My Account</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
     </nav>
 
     <section>
@@ -71,9 +75,11 @@
                         <option value="resolved">Resolved</option>
                         <option value="rejected">Rejected</option>
                     </select>
-                    <button class="button-Filter site-signup-btn site-btn dashboard-filter-item">Filter Reports</button>
+                    <button id="filter-incidents" class="button-Filter site-signup-btn site-btn dashboard-filter-item">Filter
+                        Reports</button>
                 </div>
-                <input class="reports-search-box dashboard-header-element" type="text" placeholder="Search Incidents" id="search_reports" />
+                <input class="reports-search-box dashboard-header-element" type="text" placeholder="Search Incidents"
+                    id="search_reports" />
                 <button id="new-report-btn" class="site-signup-btn site-btn dashboard-header-element">Create New</button>
             </header>
             <div class="grid-container">

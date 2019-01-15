@@ -13,22 +13,28 @@
 <body>
 	<header>
 		<h1>IReporter</h1>
-		<nav class="bigscreen-menu-btn">
+		<nav class="bigscreen-menu-nav">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about-us.html">About Us</a></li>
+				<li class="header-nav-item"><a href="index.html">Home</a></li>
+				<li class="header-nav-item"><a href="about-us.html">About Us</a></li>
 			</ul>
 		</nav>
 		<nav class="mobile-menu-btn">
-			<button onclick="toggleMobileMenuVisibility()" class="dropdownbtn">&#9776;</button>
-			<div id="mobile-menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about-us.html">About Us</a></li>
-				</ul>
+			<div onclick="toggleMobileMenuVisibility()" class="dropdownbtn">
+				<div class="dropdownbtn-icon-bar"></div>
+				<div class="dropdownbtn-icon-bar"></div>
+				<div class="dropdownbtn-icon-bar"></div>
 			</div>
 		</nav>
 	</header>
+
+	<nav id="mobile-menu" class="account-menu-nav">
+		<ul>
+			<li class="header-nav-item"><a href="index.html">Home</a></li>
+			<li class="header-nav-item"><a href="#">About Us</a></li>
+		</ul>
+	</nav>
+
 	<section class="sign-form-container">
 		<div class="sign-form-container-elements-wrapper">
 			<div class="sign-form-image-wrapper">
