@@ -630,6 +630,10 @@ h2.dashboard-header-element {
   background-color: rgb(255, 255, 248);
 }
 
+#new-report-btn:hover {
+  background-color: #E8E8E8;
+}
+
 .header-nav-item a:hover{
   
   background-color: #FFFFFF;
