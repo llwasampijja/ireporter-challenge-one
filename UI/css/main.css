@@ -26,11 +26,10 @@ a {
   color: rgb(250, 246, 246);
 } */
   
-/* a:hover {
+a:hover {
   color: rgb(58, 178, 248);
-  color: #000000;
   background-color: #FFFFFF;
-} */
+}
 
 table {
   border-collapse: collapse;
@@ -64,7 +63,11 @@ header {
   /* background-color: rgb(58, 178, 248); */
   background-color: rgb(58, 178, 248);
   padding: 15px;
-  color: #FFFFFF
+  color: #FFFFFF;
+}
+
+header.navigation {
+  border-bottom: #E8E8E8 solid 1px;
 }
 
 header h1 {
@@ -160,7 +163,7 @@ header nav ul li a:link{
   position: relative;
   color: rgb(58, 178, 248);
   margin: 20px 0px;
-  font-style: italic
+  font-style: italic;
 }
 
 .sign-form-input {
@@ -223,7 +226,7 @@ input.sign-form-input {
 }
 
 .website-banner-foreground {
-  background-color: rgba(18,18,18,0.50)
+  background-color: rgba(18,18,18,0.50);
 
 }
 
@@ -232,7 +235,8 @@ input.sign-form-input {
   background-color: rgb(58, 178, 248);
   border-radius: 30px;
   border: 0;
-  color: #ffffff !important;
+  color: #ffffff;
+  /* color: #ffffff !important; */
   display: inline-block;
   font-weight: bold;
   padding: 1% 3%;
@@ -284,7 +288,8 @@ input.sign-form-input {
 
 .site-btn {
   background-color: rgb(58, 178, 248);
-  color: black !important;
+  color: black;
+  /* color: black !important; */
 }
 
 footer {
@@ -421,7 +426,7 @@ h2.dashboard-header-element {
 }
 
 .relevant-sites-links-group ul li a:link, .relevant-sites-links-group ul li a:visited {
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 /* The Modal (background) */
@@ -496,7 +501,8 @@ h2.dashboard-header-element {
   background-color: rgb(58, 178, 248);
   border-radius: 30px;
   border: 0;
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
+  color: #ffffff;
   display: inline-block;
   font-weight: bold;
   padding: 1% 3%;
@@ -627,15 +633,16 @@ h2.dashboard-header-element {
 .header-nav-item a:hover{
   
   background-color: #FFFFFF;
-  color: #000000;
+  color: rgb(58, 178, 248);
+  border-radius: 10px;
 }
 
-.site-signup-btn:hover:visited {
-  background-color: #FFFFFF;
-  color: #000000;
+.view-report-btn:hover, .edit-report-btn:hover, .site-signup-btn:hover {
+  background-color: #E8E8E8;
+  color: rgb(58, 178, 248);
 }
 
-/* .site-signup-btn:hover, .view-report-btn:hover, .edit-report-btn:hover */
+/* .site-signup-btn:hover, .view-report-btn:hover, .edit-report-btn:hover, .view-report-btn:hover, .edit-report-btn:hover */
 /* .site-signup-btn, .view-report-btn, .edit-report-btn {
   appearance: none;
   background-color: rgb(58, 178, 248);
@@ -675,8 +682,6 @@ h2.dashboard-header-element {
     display: inline-block;
     background-color: rgb(58, 178, 248);
     color: rgb(58, 178, 248);
-    /* padding: 5px 10px; */
-    /* margin: 10px 10px; */
     float: right;
   }
 
@@ -801,8 +806,6 @@ h2.dashboard-header-element {
   option {
     font-size: 12px;
   }
-
-	
 
 	.reports-table table tr td:nth-of-type(1):before { content: "Index"; }
 	.reports-table table tr td:nth-of-type(2):before { content: "Title"; }
